@@ -1,0 +1,102 @@
+ @import url('global.css'); /* Importando o arquivo com estilização global */
+
+#container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black-800);
+    height: 100%;
+    align-items: center;
+}
+#container h1{
+    margin-top: 2rem;
+}
+.content-formation{
+    display: flex;
+    margin-top: 2rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.content-box{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+
+    gap: 2rem;
+    justify-content: center;
+}
+.box-formation{
+    display: flex;
+    align-items: center;
+    padding-block: 1rem;
+    border: 4px solid var(--purple-400);
+    border-radius: 10px;
+    height: 8.5rem;
+}
+.image-school{
+    margin-left: 20px;
+    width: 13.5rem;
+}
+.content-information{
+    margin-left: 20px;
+    height: 100%;
+}
+.content-information h1{
+    font-size: 1.3rem;
+}
+.content-information p{
+    color: var(--gray-500);
+    margin-top: 20px;
+    font-size: 1rem;
+}
+@media only screen and (max-width: 768px) {
+    #container{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--black-800);
+        height: 100vh;
+        align-items: center;
+        padding: 0 0 300px 0;
+    }
+    #container h1{
+        margin-top: 0.5rem;
+    }
+    .content-formation{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .content-box{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+    }
+    .box-formation{
+        display: flex;
+        align-items: center;
+        padding-block: 1rem;
+        border: 4px solid var(--purple-400);
+        border-radius: 10px;
+        height: 8.5rem;
+    }
+    .image-school{
+        margin-left: 20px;
+        width: 6rem;
+    }
+    .content-information{
+        margin-left: 20px;
+        height: 100%;
+    }
+    .content-information h1{
+        font-size: 1.3rem;
+    }
+    .content-information p{
+        color: var(--gray-500);
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+    .image-avatar{
+        width: 12rem;
+    }
+}

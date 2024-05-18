@@ -1,0 +1,141 @@
+@import url('global.css');
+#container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--purple-600);
+    height: 100%;
+}
+#container h1{
+    font-size: 3.5rem;
+    color: var(--purple-200);
+}
+#container p{
+    font-size: 1.1rem;
+}
+.content-form{
+    width: 35%;
+
+}
+.box-form{
+    display: flex;
+    flex-direction: column;
+   margin-top: 1.5rem;
+    gap: 0.8rem;
+}
+.box-form label{
+    font-size: 1.3rem;
+}
+.box-form input{
+    height: 2.5rem;
+    background-color: var(--purple-200);
+    border: none;
+    border-radius: 5px;
+    padding-inline: 5px;
+    font-size: 1.1rem;
+}
+.box-form input:focus{
+    outline: none;
+}
+.box-form textarea{
+    border-style: none;
+    background-color: var(--purple-200);
+    height: 10rem;
+    max-height: 15rem;
+    min-height: 10rem;
+    resize: vertical;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.1rem;
+}
+.box-form textarea:focus{
+    outline: none;
+}
+.box-form button{
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--purple-400);
+    border: none;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+.box-form button:hover{
+    cursor: pointer;
+    background-color: var(--purple-200);
+    color: var(--purple-600)
+}
+@media only screen and (max-width: 768px) {
+    #container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: var(--purple-600);
+        padding-bottom: 22rem;
+    }
+    #container h1{
+        font-size: 3.5rem;
+        color: var(--purple-200);
+    }
+    #container p{
+        font-size: 1.1rem;
+    }
+    .content-form{
+        width: 90%;
+    
+    }
+    .box-form{
+        display: flex;
+        flex-direction: column;
+       margin-top: 1.5rem;
+        gap: 0.8rem;
+    }
+    .box-form label{
+        font-size: 1.3rem;
+    }
+    .box-form input{
+        height: 2.5rem;
+        background-color: var(--purple-200);
+        border: none;
+        border-radius: 5px;
+        padding-inline: 5px;
+        font-size: 1.1rem;
+    }
+    .box-form input:focus{
+        outline: none;
+    }
+    .box-form textarea{
+        border-style: none;
+        background-color: var(--purple-200);
+        height: 10rem;
+        max-height: 15rem;
+        min-height: 10rem;
+        resize: vertical;
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 1.1rem;
+    }
+    .box-form textarea:focus{
+        outline: none;
+    }
+    .box-form button{
+        height: 50px;
+        border-radius: 10px;
+        background-color: var(--purple-400);
+        border: none;
+        font-size: 1.5rem;
+        transition: 0.5s;
+    }
+    .box-form button:hover{
+        cursor: pointer;
+        background-color: var(--purple-200);
+        color: var(--purple-600)
+    }
+    .image-avatar{
+        margin-top: 15rem;
+        width: 20rem;
+    }
+}
